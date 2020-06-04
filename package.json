@@ -6,9 +6,19 @@
   "dependencies": {
     "webpack": "^4.43.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "rimraf": "^3.0.2",
+    "webpack-cli": "^3.3.11"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "npm run clean sass",
+    "build": "webpack",
+    "sass": "sass --watch input.scss ./dist/output.css",
+    "srv": "browser-sync start --server --files \"./*\"",
+    "clean": "rimraf dist"
   },
   "author": "Mariusz Krawczyk",
   "license": "ISC"
