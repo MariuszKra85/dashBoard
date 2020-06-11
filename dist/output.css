@@ -80,4 +80,131 @@ body {
   left: 23px;
 }
 
+.followers {
+  position: relative;
+  background-color: #252a41;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 35px 20px 20px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.followers:hover {
+  background: #374062;
+  cursor: pointer;
+}
+
+.followers-container {
+  margin-bottom: 2rem;
+}
+
+.padding-blue::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #198ff5;
+  width: 100%;
+}
+.padding-red::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #c80000;
+  width: 100%;
+}
+.padding-gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, #fdc468, #df4996);
+  width: 100%;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-handle {
+  color: #8b97c6;
+  display: flex;
+}
+
+.followers--social-icon {
+  margin-right: 10px;
+}
+
+.total--largeNum {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.total--text {
+  color: #8b97c6;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.change {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.change--img {
+  padding: 0 3px 2px 0;
+}
+.change--text-inc {
+  color: #1db489;
+}
+.change--text-dec {
+  color: #dc414c;
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    padding: 0 8%;
+  }
+
+  .followers--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .overview--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .overview-container h2 {
+    width: 100%;
+  }
+
+  .followers,
+.overview-box {
+    width: 35%;
+    margin: 0 3% 15px 0;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
