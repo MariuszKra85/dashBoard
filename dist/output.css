@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+  background-color: #1e202a;
+  font-size: 14px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.light {
+  transition: background 1s;
+  color: blue;
+  background-color: white;
+}
+
+.dark {
+  transition: background 1s;
+  color: white;
+  background-color: #1e202a;
+}
+
+.header--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header--text-title {
+  font-size: 1.7rem;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.header--text {
+  color: #8b97c6;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.mode--controls {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.mode--name {
+  color: #8b97c6;
+  margin: 0;
+}
+.mode--switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+.mode--slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #378fe6, #3eda82);
+  border-radius: 24px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.mode--slider-dot {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: #1f212e;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-mode {
+  left: 23px;
+}
+
+/*# sourceMappingURL=output.css.map */

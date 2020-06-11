@@ -14,7 +14,7 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "prebuild": "npm run clean sass",
+    "prebuild": "npm run clean",
     "build": "webpack",
     "sass": "sass --watch input.scss ./dist/output.css",
     "srv": "browser-sync start --server --files \"./*\"",

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  background-color: hsl(230, 17%, 14%);
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.light {
+  transition: background 1s;
+  color: blue;
+  background-color: white;
+}
+.dark {
+  transition: background 1s;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(230, 17%, 14%);
+}
+
+.header {
+  &--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--text-title {
+    font-size: 1.7rem;
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  &--text {
+    color: hsl(228, 34%, 66%);
+    padding-bottom: 20px;
+    margin: 0;
+  }
+}
+
+.mode {
+  &--controls {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &--name {
+    color: hsl(228, 34%, 66%);
+    margin: 0;
+  }
+
+  &--switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+
+  &--slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to right,
+      hsl(210, 78%, 56%),
+      hsl(146, 68%, 55%)
+    );
+    border-radius: 24px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  &--slider-dot {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    content: '';
+    height: 18px;
+    width: 18px;
+    background-color: hsl(232, 19%, 15%);
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+.switch-mode {
+  left: 23px;
+}

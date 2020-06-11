@@ -3,33 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Media Dashboard</title>
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link id="stylesheet" rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor Social Media Dashboard</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header--title">Social Media Dashboard</h1>
-      <p class="header-counter">Total Followers: 23.222</p>
-    </header>
-    <main>
-      <section class="socialMedia">
-        <div class="socialMedia--item">
-          <img
-            src="./images/icon-facebook.svg"
-            alt="icon-facebook"
-            class="socialMedia--item--pic"
-          />
-          <p class="socialMedia-item--name">@blabla</p>
-          <p class="socialMedia--item--followNumber">1932</p>
-          <p class="socialMedia--item--text">Followers</p>
-          <span class="socialMedia--item--arrow"
-            ><img src="./images/icon-up.svg" alt="up arrow"
-          /></span>
-          <p class="socialMedia--item--todayNum">12 today</p>
+    <div class="container">
+      <header class="header--container dark">
+        <div class="header">
+          <h2 class="header--title">Social Media Dashboard</h2>
+          <p class="header--text">Total Followers: 23,004</p>
         </div>
-      </section>
-      <section></section>
-    </main>
-    <script src="./dist/bundle.js"></script>
+        <div class="mode--controls" id="modeButton">
+          <p class="mode--name" id="modeName">Dark Mode</p>
+          <div class="mode--switch">
+            <span class="mode--slider"></span>
+            <span class="mode--slider-dot"></span>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
