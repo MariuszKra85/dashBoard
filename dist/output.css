@@ -8,7 +8,7 @@ body {
 
 .light {
   transition: background 1s;
-  color: blue;
+  color: black;
   background-color: white;
 }
 
@@ -77,12 +77,15 @@ body {
 }
 
 .switch-mode {
-  left: 23px;
+  left: 25px;
+  background-color: white;
 }
 
 .followers {
+  transition: ease-in-out background-color 0.3s;
   position: relative;
   background-color: #252a41;
+  width: 80%;
   height: 215px;
   display: flex;
   flex-direction: column;
@@ -101,8 +104,11 @@ body {
   cursor: pointer;
 }
 
-.followers-container {
+.followers--container {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .padding-blue::before {
@@ -175,6 +181,71 @@ body {
   color: #dc414c;
 }
 
+.overview--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  transition: ease-in-out background-color 0.3s;
+  position: relative;
+  background-color: #252a41;
+  width: 80%;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.box:hover {
+  background: #374062;
+  cursor: pointer;
+}
+
+.box--header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.box--title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #8b97c6;
+}
+
+.box--status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box--status--number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.box--status--img {
+  margin-right: 5px;
+}
+.box--status--change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box--status--change-inc {
+  color: #1db489;
+}
+.box--status--change-dec {
+  color: #dc414c;
+}
+
 @media only screen and (min-width: 1100px) {
   body {
     padding: 0 8%;
@@ -185,7 +256,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
   }
 
   .overview--container {
@@ -193,18 +263,33 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
 
-  .overview-container h2 {
+  .overview-title {
     width: 100%;
   }
 
   .followers,
-.overview-box {
-    width: 35%;
-    margin: 0 3% 15px 0;
+.box {
+    width: 22%;
+    margin: 0 3% 20px 0;
   }
+}
+.box-light {
+  transition: ease-in-out background-color 0.3s;
+  background-color: #f0f2fa;
+}
+
+.box-light:hover {
+  background-color: #d2d8ef;
+}
+
+.box--title--light {
+  color: #60667b;
+}
+
+.mode--slider-light {
+  background-color: #aeb3cb;
 }
 
 /*# sourceMappingURL=output.css.map */
