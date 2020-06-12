@@ -11,6 +11,7 @@ const headerText = document.querySelector('.header--text');
 
 const init = () => {
   modeButton.addEventListener('click', changeTheme);
+  console.log('works');
 };
 
 const changeTheme = () => {
