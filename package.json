@@ -4,14 +4,14 @@
   "description": "frontMentor project",
   "main": "index.js",
   "dependencies": {
-    "webpack": "^4.43.0"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.3.0",
     "rimraf": "^3.0.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "prebuild": "npm run clean",
